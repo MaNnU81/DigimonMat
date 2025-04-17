@@ -22,10 +22,12 @@
   }
   
   .card-image {
-    height: 320px;
-    object-fit: cover; /* Mantiene proporzioni */
-    object-position: top; /* Allinea l'immagine in alto */
-    background-color: #f5f5f5; /* Fallback */
+    height: 320px; /* Altezza fissa */
+    width: 100%;   /* Larghezza adattabile alla card */
+    object-fit: contain; /* Cambiato da 'cover' a 'contain' */
+    object-position: center; /* Centratura */
+    background-color: #f5f5f5;
+    border-radius: 4px 4px 0 0;
   }
   
   mat-card-header {

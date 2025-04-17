@@ -15,4 +15,8 @@ export class CardComponent {
   @Input() name!: string;
   @Input() id!: number;
   @Input() digimon!: Digimon;
+  @Input() type!: string;
+  @Input() level!: string;
+  
+  
 }

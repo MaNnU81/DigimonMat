@@ -6,8 +6,8 @@ export interface Digimon {
         name: string
         href: string
         xAntibody: boolean
-        level?: string;
-        type?: string;
+        level: string;
+        type: string;
         levels: Level[]
         types: Type[]
         attributes: Attribute[]
