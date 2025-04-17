@@ -1,0 +1,16 @@
+<div class="card-container">
+    <div class="card-wrapper">
+      <app-card *ngFor="let digimon of digimons" 
+               [digimon]="digimon"
+               [name]="digimon.name"
+               [coverDigimon]="digimon.image || 'assets/images/default-digimon.jpg'"
+               [id]="digimon.id">
+      </app-card>
+    </div>  
+  
+    <div class="pagination">
+      <button mat-raised-button color="primary" (click)="digimonService.prevPage()">Indietro</button>
+      <span>Pagina {{ digimonService.page() }}</span>
+      <button mat-raised-button color="primary" (click)="digimonService.nextPage()">Avanti</button>
+    </div>
+  </div>

@@ -1,0 +1,53 @@
+.example-card {
+    max-width: 400px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+
+  .digimon-card {
+    width: 250px; /* Dimensione fissa */
+    height: 550px; /* Altezza fissa */
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+    transition: transform 0.3s ease;
+  
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+  }
+  
+  .card-image {
+    height: 320px;
+    object-fit: cover; /* Mantiene proporzioni */
+    object-position: top; /* Allinea l'immagine in alto */
+    background-color: #f5f5f5; /* Fallback */
+  }
+  
+  mat-card-header {
+    padding: 12px 16px 0;
+    flex-grow: 1; /* Occupa spazio rimanente */
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .card-subtitle {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  mat-card-actions {
+    padding: 8px 16px 12px;
+    border-top: 1px solid #eee;
+  }

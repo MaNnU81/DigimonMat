@@ -1,0 +1,26 @@
+<mat-card class="digimon-card">
+    <!-- Immagine in alto con fallback -->
+    <img mat-card-image 
+         [src]="coverDigimon" 
+         (error)="coverDigimon = 'assets/images/default-digimon.jpg'"
+         alt="{{ name }}"
+         class="card-image">
+    
+    <!-- Header con titolo e sottotitolo -->
+    <mat-card-header>
+      <mat-card-title class="card-title">{{ name }}</mat-card-title>
+      <mat-card-subtitle class="card-subtitle">
+        {{ digimon?.level || 'Rookie' }} | {{ digimon?.type || 'Unknown' }}
+      </mat-card-subtitle>
+    </mat-card-header>
+  
+    <!-- Azioni -->
+    <mat-card-actions align="end">
+      <button mat-button color="primary">
+        <mat-icon>favorite</mat-icon>
+      </button>
+      <button mat-button color="primary">
+        <mat-icon>share</mat-icon>
+      </button>
+    </mat-card-actions>
+  </mat-card>

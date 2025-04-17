@@ -1,0 +1,34 @@
+/* Container principale */
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Wrapper delle card */
+  .card-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1500px; /* Larghezza massima */
+    margin-bottom: 20px;
+    overflow-x: auto; /* Scroll orizzontale se necessario */
+    padding: 10px;
+  }
+  
+  /* Stile delle card (assicurati che app-card abbia una larghezza) */
+  app-card {
+    min-width: 220px; /* Larghezza minima per ogni card */
+    flex-shrink: 0;   /* Impedisce il restringimento */
+  }
+  
+  /* Paginazione */
+  .pagination {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-top: 20px;
+  }
